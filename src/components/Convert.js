@@ -30,7 +30,7 @@ const doTranslation = async () =>{
         setTranslated(data.data.translations[0].translatedText);
 }
 doTranslation();
-},[debouncedText]);
+},[language, debouncedText]);
 
 return (<div className="ui header">
     <div className="field">
